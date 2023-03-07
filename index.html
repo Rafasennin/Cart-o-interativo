@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Cartão Interatvivo</title>
+
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <div class="full__template">
+
+                    <div class="main__form">
+                            <div class="card__name">   
+                                <h3 class="card__name__title">Nome do proprietário</h3>
+                                <input type="text" class="input__name" id="input__name" placeholder=" ex. João João">
+                            </div>     
+
+                            <div class="card__number">   
+                                <h3 class="card__umber__title">Número do Cartão</h3>
+                                <input type="number" class="input__number" id="input__number" placeholder=" ex. 123456...">
+                                <p class="error__mensage" id="error__mensage"></p>
+                            </div>   
+
+                            <div class="card__expire__date">   
+                                <h3 class="card__date">Data de expiração (MM/AA) CVC</h3>
+                                <input type="number" class="input__date__month" id="input__date__month" placeholder=" ex. 01">
+                                <input type="number" class="input__date__year" id="input__date__year" placeholder=" ex. 2000">
+                                <p class="error__mensage__blank" id="error__mensage__blank"></p>
+
+                                <input type="number" class="input__cvc" id="input__cvc" placeholder=" ex. 1234">
+                                <p class="error__mensage__cvc" id="error__mensage__cvc"></p>
+                            </div> 
+            
+                            <button type="submit" class="confirm__button" onclick="confirmButton()">Confirmar</button>
+                    </div>
+
+                    <div class="rigth__side">
+
+                    </div>
+            </div>
+            
+                    <script src="main.js"></script>
+        </body>
+</html>

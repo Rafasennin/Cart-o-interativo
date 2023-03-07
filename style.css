@@ -1,0 +1,32 @@
+:root{
+
+--Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+--Red-input-errors: hsl(0, 100%, 66%);  
+--White: hsl(0, 0%, 100%);
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 68%, 11%);
+--font-main:'Space Grotesk', sans-serif;
+}
+
+body{
+    background-color: #010101e0;
+    font-family: var(--font-main);
+   
+}
+
+.full__template{
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+
+.main__form{
+    width: 1200px;
+    height: 600px;
+    margin: 4em auto;
+    text-align: right;
+    background-image: url(/Projeto_mentoria_2/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+
+}
