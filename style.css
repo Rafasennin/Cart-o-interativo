@@ -11,38 +11,96 @@
 
 body{
     background-color: #010101e0;
+    width: 1440px;
     font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    
 }
 
 .full__template{
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+    height: 630px;
+    margin: 4em 0 0 13em;
+    background-color: var(--White);  
 }
 
 .main__form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1200px;
-    height: 600px;
-    margin: 4em auto;
-    background-image: url(images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 360px;
-
+    grid-column: 2;
+    margin-top: 180px;
 }
 
-.card__name, .card__number, .card__expire__date, .input__cvc, .confirm__button{
-    grid-column: 2;
-    text-align: center;
-    background-color: var(--White);
+.card__name__title, .card__number__title, .card__date{
+    font-size: 12px;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.input__number, .input__name{
+    border: 1px solid var(--Very-dark-violet);
+    border-radius: 5px;
+    width: 22em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    position: relative;
+    right: 3em;
+}
+
+.input__date__month, .input__date__year, .input__cvc{
+    width: 6em;
+    margin: 0.3em;
+    border: 1px solid var(--Very-dark-violet);
+    border-radius: 5px;
+    padding: 0.5em;
+    position: relative;
+    right: 3em;
 }
 
 .confirm__button{
-    width: 5em;
-    height: 2em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 20em;
+  border: 1px solid var(--Very-dark-violet);
+  border-radius: 5px;
+  margin: 2em;
+  margin-right: 7em;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.7em;
+  background-color: var(--Very-dark-violet);
+  color: var(--White);
+  width: 19em;
 }
+
+.confirm__button:hover{
+    cursor: pointer;
+}
+
+
+.img__vertical{
+    position: absolute;
+    top: 64px;
+    left: 250px;
+    width: 350px;
+    height: 630px;
+}
+
+.img__front__card{
+    position: absolute;
+    top: 180px;
+    left: 380px;
+    width: 320px;
+}
+
+.img__back__card{
+    position: absolute;
+    top: 380px;
+    left: 450px;
+    width: 320px;
+}
+
+
