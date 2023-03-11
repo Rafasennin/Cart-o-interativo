@@ -96,6 +96,8 @@ body{
     width: 320px;
 }
 
+
+
 .img__back__card{
     position: absolute;
     top: 380px;
@@ -103,4 +105,58 @@ body{
     width: 320px;
 }
 
+.card__circle1{
+    width: 40px;
+    height: 40px;
+    background-color: var(--White);
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    border-radius: 100px;
+}
 
+.card__circle2{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--White);
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+    top: 213px;
+    left: 455px;
+    border-radius: 100px;
+}
+
+.cardHolder__number{
+    position: relative;
+    top: 220px;
+    right: 60px;
+    z-index: 1;
+    color: var(--White);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.cardHolder__name {
+    position: relative;
+    top: 240px;
+    right: 148px;
+    z-index: 1;
+    color: var(--White);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.cardHolder__date{
+
+    position: relative;
+    top: 227px;
+    left: 45px;
+    z-index: 1;
+    color: var(--White);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
