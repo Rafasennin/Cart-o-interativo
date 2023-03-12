@@ -36,9 +36,22 @@ inputCvc.addEventListener("keyup", ()=>{
 });
 
 function confirmButton() {
-    mainForm.innerHTML = "<h1 class='thankyou'>Obrigado !</h1>" +
-    "<img class='icon__complete' id='icon__complete' src='images/icon-complete.svg'></img>" + 
-    "<h3 class='thankyou__info'>Nós adicionamos os detalhes do seu cartão.</h3>";
 
+    var name = document.getElementById("input__name");
+    var number = document.getElementById("input__number");
+    var month = document.getElementById("input__date__month");
+    var year = document.getElementById("input__date__year");
+    var cvc = document.getElementById("input__cvc");
+    
+    var error1 = document.getElementById("error__mensage__blank");
+
+    if(name.value === "" && number.value === "" && month.value === "" && year.value === "" && cvc.value === "" ){  
+        error1.innerHTML = "Campo deve ser preenchido"
+
+    }else{
+         mainForm.innerHTML = "<h1 class='thankyou'>Obrigado !</h1>" +
+        "<img class='icon__complete' id='icon__complete' src='images/icon-complete.svg'></img>" + 
+        "<h3 class='thankyou__info'>Nós adicionamos os detalhes do seu cartão.</h3>";
+    }
 }   
 
