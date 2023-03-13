@@ -35,6 +35,8 @@ inputCvc.addEventListener("keyup", ()=>{
     cardCvc.innerText = inputCvc.value;
 });
 
+
+
 function confirmButton() {
 
     var name = document.getElementById("input__name");
@@ -45,8 +47,16 @@ function confirmButton() {
     
     var error1 = document.getElementById("error__mensage__blank");
 
-    if(name.value === "" && number.value === "" && month.value === "" && year.value === "" && cvc.value === "" ){  
+    if(name.value === "" || number.value === ""){ 
         error1.innerHTML = "Campo deve ser preenchido"
+    }
+
+    if(month.value === "" || year.value === ""){ 
+        error1.innerHTML = "Campo deve ser preenchido"
+    }
+
+    if(cvc.value === "" ){ 
+        error1.innerHTML = "<h3 class='blank__mensage'>Todos os campos devem ser preenchidos</h3>"
 
     }else{
          mainForm.innerHTML = "<h1 class='thankyou'>Obrigado !</h1>" +
@@ -55,3 +65,4 @@ function confirmButton() {
     }
 }   
 
+ 

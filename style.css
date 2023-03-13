@@ -51,6 +51,7 @@ body{
     margin-bottom: 2em;
     position: relative;
     right: 3em;
+    text-align: center;
 }
 
 .input__date__month, .input__date__year, .input__cvc{
@@ -61,6 +62,7 @@ body{
     padding: 0.5em;
     position: relative;
     right: 3em;
+    text-align: center;
 }
 
 .confirm__button{
@@ -82,6 +84,14 @@ body{
 .confirm__button:hover{
     cursor: pointer;
 
+}
+
+.blank__mensage{
+    color: red;
+    font-weight: bold;
+    margin-right: 85px;
+    font-size: 14px;
+    margin-top: 4px;
 }
 
 
@@ -146,21 +156,21 @@ body{
 
 .cardHolder__name {
     position: absolute;
-    top: 320px;
+    top: 310px;
     z-index: 1;
-    left: 430px;
+    left: 400px;
     color: var(--White);
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    max-width: 230px;
+    max-width: 225px;
 
 }
 
 .cardHolder__date, .cardHolder__date2{
     position: absolute;
     top: 320px;
-    left: 620px;
+    left: 625px;
     z-index: 1;
     color: var(--White);
     font-size: 12px;
@@ -168,7 +178,7 @@ body{
 }
 
 .cardHolder__date2{
-    left: 645px;
+    left: 650px;
 
 }
 
@@ -206,3 +216,47 @@ body{
     margin-right: 100px;
     margin-top: 1em;  
 }
+
+.input__name:valid{
+    border: 2px solid blue ;
+}
+
+.input__number:valid{
+    border: 2px solid blue ;
+}
+
+.input__date__month:valid{
+    border: 2px solid blue ;
+}
+
+.input__date__year:valid{
+    border: 2px solid blue ;
+}
+
+.input__cvc:valid{
+    border: 2px solid blue ;
+}
+
+.input__name:invalid{
+    border: 2px dashed red;
+}
+
+.input__number:invalid{
+    border: 2px dashed red;
+}
+
+.input__date__month:invalid{
+    border: 2px dashed red;
+}
+
+.input__date__year:invalid{
+    border: 2px dashed red;
+}
+
+.input__cvc:invalid{
+    border: 2px dashed red;
+}
+
+
+
+
